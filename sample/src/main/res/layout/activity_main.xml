@@ -90,9 +90,9 @@
         android:layout_toRightOf="@id/container"
         android:scaleType="centerCrop"
         android:src="@drawable/android"
-        app:shape="rounded"/>
+        app:mask_shape="rounded"/>
 
-    <ListView
+    <GridView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

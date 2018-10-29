@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fillList() {
-        ListView grid = findViewById(R.id.list);
+        GridView grid = findViewById(R.id.list);
         assert grid != null;
         grid.setAdapter(new BaseAdapter() {
             @Override

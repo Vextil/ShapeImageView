@@ -87,7 +87,7 @@ public class ShapeImageView extends ImageView {
         super(context, attrs, defStyleAttr);
         if (attrs != null) {
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ShapeImageView);
-            shapeType = a.getInt(R.styleable.ShapeImageView_shape, shapeType);
+            shapeType = a.getInt(R.styleable.ShapeImageView_mask_shape, shapeType);
             direction = a.getInt(R.styleable.ShapeImageView_decorations_direction, direction);
             float radius = a.getDimension(R.styleable.ShapeImageView_radius, 0);
             if (radius == 0) {

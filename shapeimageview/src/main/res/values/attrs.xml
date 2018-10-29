@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ShapeImageView">
-        <attr name="shape" format="integer">
+        <attr name="mask_shape" format="integer">
             <enum name="circle" value="1"/>
             <enum name="rounded" value="2"/>
         </attr>
