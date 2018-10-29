@@ -26,6 +26,7 @@ Changelog
 ---
 **v1.0.2**
 - Fix attribute "shape" name collision
+
 **v1.0.1**
 - Added "radius"
 - Use dimen for radius_x, radius_y and radius
