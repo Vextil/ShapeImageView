@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'shape-image-view'
+    bintrayName = 'shapeimageview'
 
     publishedGroupId = 'io.vextil'
-    libraryName = 'shapeimageview'
+    libraryName = 'ShapeImageView'
     artifact = 'shapeimageview'
 
     libraryDescription = 'Android ImageView with custom shapes'
@@ -43,6 +44,5 @@ android {
     }
 }
 
-// Place it at the end of the file
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'
