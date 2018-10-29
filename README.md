@@ -1,8 +1,9 @@
 ShapeImageView
 ====
-[ ![Download](https://api.bintray.com/packages/vextil/maven/shapeimageview/images/download.svg) ](https://bintray.com/vextil/maven/shapeimageview/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/vextil/maven/ShapeImageView/images/download.svg) ](https://bintray.com/vextil/maven/ShapeImageView/_latestVersion)
 
-An ImageView that supports rounded corners, circles and borders using shaders which is the fastest rendering method. Based on [EffectiveShapeView](https://github.com/TangXiaoLv/EffectiveShapeView).
+An ImageView that supports rounded corners, circles and borders using shaders which is the fastest rendering method. 
+Based on [EffectiveShapeView](https://github.com/TangXiaoLv/EffectiveShapeView).
 
 Gradle
 ----
