@@ -18,7 +18,7 @@ Usage
 ```xml
 <io.vextil.shapeimageview.ShapeImageView
         android:src="@drawable/android"
-        app:shape="rounded"
+        app:mask_shape="rounded"
         app:radius="6dp"/>
 ```
         
