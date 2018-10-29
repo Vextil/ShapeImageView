@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'shape-image-view'
+
+    publishedGroupId = 'io.vextil'
+    libraryName = 'shapeimageview'
+    artifact = 'shapeimageview'
+
+    libraryDescription = 'Android ImageView with custom shapes'
+
+    siteUrl = 'https://github.com/Vextil/ShapeImageView'
+    gitUrl = 'https://github.com/Vextil/ShapeImageView.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'vextil'
+    developerName = 'Joaquín Cuitiño'
+    developerEmail = 'vextil@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
