@@ -9,7 +9,7 @@ Gradle
 ----
 ```
 dependencies {
-    compile 'io.vextil:shapeimageview:1.0.1'
+    compile 'io.vextil:shapeimageview:1.0.2'
 }
 ```
 
