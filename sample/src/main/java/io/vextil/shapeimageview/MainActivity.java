@@ -117,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
                 switch (position % 2) {
                     case 0:
                         shapeView.changeShapeType(Shape.ROUNDED);
-                        shapeView.setDegreeForRoundRectangle(32, 32);
                         break;
                     case 1:
                         shapeView.changeShapeType(Shape.CIRCLE);

@@ -89,8 +89,14 @@ public class ShapeImageView extends ImageView {
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ShapeImageView);
             shapeType = a.getInt(R.styleable.ShapeImageView_shape, shapeType);
             direction = a.getInt(R.styleable.ShapeImageView_decorations_direction, direction);
-            radiusX = a.getFloat(R.styleable.ShapeImageView_radius_x, radiusX);
-            radiusY = a.getFloat(R.styleable.ShapeImageView_radius_y, radiusY);
+            float radius = a.getDimension(R.styleable.ShapeImageView_radius, 0);
+            if (radius == 0) {
+                radiusX = a.getDimension(R.styleable.ShapeImageView_radius_x, radiusX);
+                radiusY = a.getDimension(R.styleable.ShapeImageView_radius_y, radiusY);
+            } else {
+                radiusX = radius;
+                radiusY = radius;
+            }
             decorationsView = a.getDrawable(R.styleable.ShapeImageView_decorations_src);
             a.recycle();
         }
@@ -127,6 +133,7 @@ public class ShapeImageView extends ImageView {
                     maskPaint.setStyle(Paint.Style.STROKE);
                     maskPaint.setColor(borderColor);
                     maskPaint.setStrokeWidth(borderWidth);
+                    maskPaint.setAntiAlias(true);
                     canvas.drawPath(maskPath, maskPaint);
                 }
 

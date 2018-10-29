@@ -13,7 +13,8 @@
         </attr>
 
         <attr name="decorations_src" format="reference"/>
-        <attr name="radius_x" format="float"/>
-        <attr name="radius_y" format="float"/>
+        <attr name="radius_x" format="dimension"/>
+        <attr name="radius_y" format="dimension"/>
+        <attr name="radius" format="dimension"/>
     </declare-styleable>
 </resources>
